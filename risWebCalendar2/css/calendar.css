@@ -1,0 +1,183 @@
+/******************************
+ * �J�����_�[�G���A�ݒ�
+ * (�ݒ�̏��Ԃ�ύX���Ȃ�����)
+ */
+
+/* �J�����_�[�G���A */
+div#CalendarBlock {
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	height: 100%;
+}
+
+/* �J�����_�[�̑S�Z�����ʐݒ� */
+#CalendarBlock td {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* �g���X�g�\�����̃J������ */
+#CalendarBlock td.showDetail {
+	width: 25%;
+}
+
+/****************************************************************
+ * �x�f�����܂܂Ȃ��悤�ɂ���B
+ * (settings.xml�Őݒ�\�Ȃ̂ŁA�����ł͕ύX���Ȃ��悤�ɁI�I)
+ ****************************************************************/
+#CalendarBlock.nonconsultationDayHidden td.nonconsultationDay {
+	display: none;
+}
+
+/******************************
+ * ���t�G���A�ݒ�
+ */
+#dateblock {
+	overflow: hidden;
+	border-bottom-style: none;
+}
+
+/* ���t�G���A�S�Z�� */
+#dateblock td {
+	background-color: #CCFFCC; /* ���t�����̐F��ݒ肷�� */
+	font-size: 110%;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ���t�G���A�I���� */
+#dateblock td.selected {
+	background-color: #9999FF;
+}
+
+/* ���������G���A�]���Z�� */
+#dateblock td.dateOffset {
+	border-bottom-style: none;
+	width: 60px;
+	background-color: #CCFFCC;
+}
+
+/*  �����G���A�̃Z���̕��ݒ�*/
+#dateblock td.dateOffset div {
+	width: 60px;
+}
+
+/******************************/
+
+/******************************
+ * �����G���A�E�g�G���A�X�^�C���ݒ�
+ */
+#timeblock {
+	overflow-y: scroll;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	background-color: #FFFFFF;
+	border-bottom-width: 1px;
+	height: 100%;
+}
+
+/* �����G���A�E�g�G���A�̑S�e�[�u�����ʐݒ� */
+#timeblock table {
+	width: 100px;
+	table-layout: fixed;
+}
+
+/* �����G���A�E�g�G���A�̑S�Z�����ʐݒ� */
+#timeblock td {
+	font-size: 70%;
+	color: #000000;
+	background-color: #FFFFFF;
+	vertical-align: top;
+}
+
+/*******************************
+ * �����G���A
+ *
+ * td.time�N���X�Ƃ��̎q�v�f��div�u���b�N�����ɃT�C�Y���s�N�Z���w�肷�鎖��
+ * �E�B���h�E�̃T�C�Y�ɂ�����炸���60px�ɌŒ肷�鎖���o����B
+ * ����͏�̃e�[�u���ʒu�Ɖ��̃e�[�u�����ʒu�����炳�Ȃ��ׂɕK�{�B
+ * �ύX�\�ȃv���p�e�B�͉��ɃR�����g�̂�����̂̂�
+ */
+#timeblock td.time {
+	background-color: #CCFFCC; /* ���Ԃ�\������J�����̐F��ύX����B*/
+	width: 60px;
+}
+
+#timeblock td.time div {
+	width: 60px;
+	font-size: 12px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/*******************************
+ * �g�G���A
+ */
+#timeblock td div.data {
+	overflow: hidden;
+}
+
+#timeblock td div span.datetime {
+	display: none;
+}
+
+/* ���Ԙg�����\�����ڋ��ʐݒ� */
+#timeblock div.calendarItem {
+	display: inline;
+	position: absolute;
+	overflow: hidden;
+}
+
+/*
+ * �g�ݒ�(�����D��)
+ */
+
+/* �y���̘g */
+#timeblock td.saturday, #timeblock td.sunday {
+	background-color: #ffcccc;
+}
+
+/* �x�f���̘g */
+#timeblock td.nonconsultationDay {
+	background-color: #ff9999;
+}
+
+/* �����̘g */
+#timeblock td.today {
+	background-color: #99ccff;
+}
+
+/* �f�[�^�����g */
+#timeblock td.hasdata {
+	background-color: #CCFFCC;
+}
+
+/* �I�����ꂽ�g */
+#timeblock td.selected {
+	border-color: #ffcc00;
+	border-width: 3px;
+	/* background-color: #FFFFFF; */
+}
+
+/*
+ * �g���X�g�ݒ�
+ */
+
+/* �g���X�g */
+#timeblock div.detailData {
+	display: none;
+	margin: 2px;
+	padding: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+	overflow: hidden;
+}
+
+/* �I�����ꂽ�g���X�g */
+#timeblock div.detailData.selectedDetailData {
+	/* border-color: #ffffcc; */
+	/* border-width: 2px; */
+	background-color: #ffffcc;
+}

@@ -1,0 +1,51 @@
+/*
+ * �����X�e�[�^�X�ɂ�镶���F(DB�ݒ���D�悷��)
+ * �Z���N�^�� #timeblock div.statusXX �Ŏw�肷��(XX:�����X�e�[�^�X)�B
+ */
+
+/* �T���v��(���ς̏ꍇ) */
+/*
+#timeblock div.status90 {
+	color: #1424903;
+}
+*/
+
+/* �ďo */
+#timeblock div.status2 {
+	color: #FF00FF;
+}
+
+/* ��t�� */
+#timeblock div.status10 {
+	color: #3F48CC;
+}
+
+/* ������ */
+#timeblock div.status20 {
+	color: #CACA00;
+}
+
+/* �ۗ� */
+#timeblock div.status21 {
+	color: #FFF800;
+}
+
+/* �Č� */
+#timeblock div.status24 {
+	color: #FF00FF;
+}
+
+/* �Ď� */
+#timeblock div.status25 {
+	color: #3F48CC;
+}
+
+/* ������ */
+#timeblock div.status90 {
+	color: #008000;
+}
+
+/* ���~ */
+#timeblock div.status91 {
+	color: #FF0000;
+}

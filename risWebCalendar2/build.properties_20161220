@@ -1,0 +1,5 @@
+build=../../bin
+war=risWebCalendar
+domain=C:/Java/jakarta-tomcat-5.0.28/webapps
+serverhome=C:/Java/jakarta-tomcat-5.0.28
+lib=WEB-INF/lib

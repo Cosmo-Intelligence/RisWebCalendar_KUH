@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>risWebCalendar</display-name>
+	<description> Version 1.1.0 </description>
+	<filter>
+		<filter-name>Set Character Encoding</filter-name>
+		<filter-class>com.yokogawa.radiquest.ris.core.SetCharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Set Character Encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>ConfiguratorServlet</servlet-name>
+		<servlet-class>com.yokogawa.radiquest.ris.core.ConfiguratorServlet</servlet-class>
+		<init-param>
+			<param-name>SettingFileName</param-name>
+			<param-value>settings.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.yokogawa.radiquest.ris.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ReservationServlet</servlet-name>
+		<servlet-class>com.yokogawa.radiquest.ris.servlet.ReservationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReservationServlet</servlet-name>
+		<url-pattern>/ReservationServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- ログイン処理が必要ない場合 -->
+	<welcome-file-list>
+		<welcome-file>ReservationServlet</welcome-file>
+	</welcome-file-list>
+	<!-- ログイン処理が必要な場合 -->
+	<!-- <welcome-file-list> <welcome-file>index.jsp</welcome-file> </welcome-file-list> -->
+</web-app>

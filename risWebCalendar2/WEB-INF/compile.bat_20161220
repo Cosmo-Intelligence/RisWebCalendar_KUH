@@ -1,0 +1,3 @@
+cd "C:\Program Files\Apache Software Foundation\Tomcat 6.0\webapps\risWebCalendar\WEB-INF"
+del /Q /S classes\
+"C:\Program Files\Java\jdk1.5.0_22\bin\javac" -Xlint:unchecked -encoding UTF-8 -classpath lib\ojdbc5.jar;..\..\..\lib\servlet-api.jar;lib\log4j-1.2.9.jar;lib\commons-lang-2.4.jar; -d classes src\com\yokogawa\radiquest\ris\core\*.java src\com\yokogawa\radiquest\ris\DBAccess\*.java src\com\yokogawa\radiquest\ris\action\*.java src\com\yokogawa\radiquest\ris\bean\*.java src\com\yokogawa\radiquest\ris\servlet\*.java

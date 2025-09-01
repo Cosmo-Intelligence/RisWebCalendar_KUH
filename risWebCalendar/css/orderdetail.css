@@ -1,0 +1,75 @@
+/*�ꗗ�\���G���A�̕\���ʒu�ݒ�*/
+#OrderBlock {
+	position: relative;
+}
+
+/*�ꗗ�\���G���A�̔w�i�F�ݒ�*/
+#OrderDetailSection {
+	background-color: #CCFFCC;
+}
+
+/*�ꗗ�\���G���A�̃^�C�g���ݒ�*/
+#OrderDetailHead {
+	overflow-x: hidden;
+}
+
+/*�ꗗ�\���G���A�̃^�C�g���̐ݒ�*/
+#OrderDetailHead table {
+	table-layout: fixed;
+	height: 100%;
+}
+
+/*�ꗗ�\���G���A�̃^�C�g���ݒ�*/
+#OrderDetailHead tr {
+	height: 100%;
+	vertical-align: top;
+}
+
+#OrderDetailHead th {
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #CCFFCC;
+	vertical-align: top;
+}
+
+#OrderDetailHead th div {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*�ꗗ�\���G���A�̒l�\�������̕\���ݒ�*/
+#OrderDetailList {
+	height: 215px;
+	position: relative;
+	overflow: auto;
+	overflow-x: auto;
+	overflow-y: scroll;
+	background-color: #FFF;
+}
+
+/*�ꗗ�\���G���A�̒l�\�������̐ݒ�*/
+#OrderDetailList table {
+	table-layout: fixed;
+	text-align: center;
+}
+
+/*�ꗗ�\���G���A�̒l�\�������̐ݒ�*/
+#OrderDetailList td {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*�ꗗ�\���G���A�̒l�\�������̔w�i�F�ݒ�*/
+#OrderDetailList table tbody tr td.selected {
+	background-color: #CCC;
+}
+
+/*�ꗗ�\���G���A�̃^�C�g���\�������̐ݒ�*/
+#OrderDetailHead div.divHidden {
+	overflow: hidden;
+}
+
+/*�ꗗ�\���G���A�̒l�\�������̑I��F�ݒ�*/
+.selectedOrder {
+	background-color: #ffffcc;
+}

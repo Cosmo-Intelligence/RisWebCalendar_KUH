@@ -1,0 +1,72 @@
+/*一覧表示エリアの表示位置設定*/
+#OrderBlock {
+	position: relative;
+}
+
+/*一覧表示エリアの背景色設定*/
+#OrderDetailSection {
+	background-color: #CCFFCC;
+}
+
+/*一覧表示エリアのタイトル設定*/
+#OrderDetailHead {
+	overflow-x: hidden;
+}
+
+/*一覧表示エリアのタイトルの設定*/
+#OrderDetailHead table {
+	table-layout: fixed;
+	height: 100%;
+}
+
+/*一覧表示エリアのタイトル設定*/
+#OrderDetailHead tr {
+	height: 100%;
+	vertical-align: top;
+}
+#OrderDetailHead th {
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #CCFFCC;
+	vertical-align: top;
+}
+#OrderDetailHead th div {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+/*一覧表示エリアの値表示部分の表示設定*/
+#OrderDetailList {
+	height: 215px;
+	position: relative;
+	overflow: auto;
+	overflow-x: auto;
+	overflow-y: scroll;
+	background-color: #FFF;
+}
+
+/*一覧表示エリアの値表示部分の設定*/
+#OrderDetailList table {
+	table-layout: fixed;
+	text-align: center;
+}
+
+/*一覧表示エリアの値表示部分の設定*/
+#OrderDetailList td {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*一覧表示エリアの値表示部分の背景色設定*/
+#OrderDetailList table tbody tr td.selected {
+	background-color: #CCC;
+}
+
+/*一覧表示エリアのタイトル表示部分の設定*/
+#OrderDetailHead div.divHidden { overflow: hidden; }
+
+/*一覧表示エリアの値表示部分の選択色設定*/
+.selectedOrder {
+	background-color: #ffffcc;
+}

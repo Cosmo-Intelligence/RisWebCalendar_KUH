@@ -1,0 +1,403 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#clear {
+	clear: both;
+}
+
+body {
+	background: #787EC1;
+}
+
+html, body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: #787EC1;
+}
+
+#header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 92px;
+	white-space: nowrap;
+}
+
+/* ----------------------------------- �����u���b�N ----------------------------------- */
+#SearchBlock {
+	background-color: #787EC1;
+	color: #FFF;
+	font-weight: bold;
+	margin: 5px;
+	height: 36px;
+}
+
+#SearchBlock div {
+	display: inline;
+}
+
+/*������ʂ̑I���{�^�������T�C�Y�ݒ�*/
+#openKensaTypeDialog {
+	font-size: 16px;
+}
+
+/*�������̑I���{�^�������T�C�Y�ݒ�*/
+#openKensaRoomDialog {
+	font-size: 16px;
+}
+
+/*RI�敪�̑I���{�^�������T�C�Y�ݒ�*/
+#openRiOrderDialog {
+	font-size: 16px;
+}
+
+/*�����X�e�[�^�X�̑I���{�^�������T�C�Y�ݒ�*/
+#openKensaStatusDialog {
+	font-size: 16px;
+}
+
+/*�˗��Ȃ̑I���{�^�������T�C�Y�ݒ�*/
+#openSectionDialog {
+	font-size: 16px;
+}
+
+/*�a���̑I���{�^�������T�C�Y�ݒ�*/
+#openByoutouDialog {
+	font-size: 16px;
+}
+
+/*���ғ��O�̑I���{�^�������T�C�Y�ݒ�*/
+#openKanjaNyugaiDialog {
+	font-size: 16px;
+}
+
+/*�`�[���O�̑I���{�^�������T�C�Y�ݒ�*/
+#openDenpyouNyugaiDialog {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Del S.Matsumoto@CST Start KANA-C1-002 ���ɂ��ؑփ{�^���ύX  */
+/*�挎�{�^�������T�C�Y�ݒ�*/
+/*#prevMonth { */
+/*	font-size: 16px; */
+/*} */
+/* 2015.02.27 Del S.Matsumoto@CST End KANA-C1-002 ���ɂ��ؑփ{�^���ύX */
+
+/*��T�{�^�������T�C�Y�ݒ�*/
+#prevWeek {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Add S.Matsumoto@CST Start KANA-C1-002 ���ɂ��ؑփ{�^���ύX */
+/* ����{�^�������T�C�Y�ݒ�*/
+#prevDay {
+	font-size: 16px;
+}
+/* 2015.02.27 Add S.Matsumoto@CST End KANA-C1-002 ���ɂ��ؑփ{�^���ύX */
+
+/*�{���{�^�������T�C�Y�ݒ�*/
+#today {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Add S.Matsumoto@CST Start KANA-C1-002 ���ɂ��ؑփ{�^���ύX */
+/* �����{�^�������T�C�Y�ݒ�*/
+#nextDay {
+	font-size: 16px;
+}
+/* 2015.02.27 Add S.Matsumoto@CST End KANA-C1-002 ���ɂ��ؑփ{�^���ύX */
+
+/*���T�{�^�������T�C�Y�ݒ�*/
+#nextWeek {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Del S.Matsumoto@CST Start KANA-C1-002 �I�[�_�\�����@�̕ύX */
+/*�����{�^�������T�C�Y�ݒ�*/
+/*#nextMonth { */
+/*	font-size: 16px; */
+/*} */
+/* 2015.02.27 Del S.Matsumoto@CST End KANA-C1-002 �I�[�_�\�����@�̕ύX */
+
+/*�X�V�{�^�������T�C�Y�ݒ�*/
+#reloadBtn {
+	font-size: 16px;
+}
+
+/*������ʂ̃e�L�X�g�t�B�[���h���ݒ�*/
+#kensaTypeText {
+	width: 120px;
+	font-size: 16px;
+}
+
+/*�������̃e�L�X�g�t�B�[���h���ݒ�*/
+#kensaRoomText {
+	width: 83px;
+	font-size: 16px;
+}
+
+/*RI�敪�̃e�L�X�g�t�B�[���h���ݒ�*/
+#riOrderText {
+	width: 70px;
+	font-size: 16px;
+}
+
+/*�����X�e�[�^�X�̃e�L�X�g�t�B�[���h���ݒ�*/
+#kensaStatusText {
+	width: 60px;
+	font-size: 16px;
+}
+
+/*�˗��Ȃ̃e�L�X�g�t�B�[���h���ݒ�*/
+#sectionText {
+	width: 137px;
+	font-size: 16px;
+}
+
+/*�a���̃e�L�X�g�t�B�[���h���ݒ�*/
+#byoutouText {
+	width: 100px;
+	font-size: 16px;
+}
+
+/*���ғ��O�̃e�L�X�g�t�B�[���h���ݒ�*/
+#kanjaNyugaiText {
+	width: 57px;
+	font-size: 16px;
+}
+
+/*�`�[���O�̃e�L�X�g�t�B�[���h���ݒ�*/
+#denpyouNyugaiText {
+	width: 57px;
+	font-size: 16px;
+}
+
+/*�����X�e�[�^�X�̃_�C�A���O�ݒ�*/
+#kensaStatusCheckBoxes td {
+	white-space: nowrap;
+}
+/* ���Ԙg�̕� */
+#timeFrame {
+	width: 47px;
+}
+
+/* �e�_�C�A���O���̃`�F�b�N�{�b�N�X�̃e�[�u���ݒ� */
+.checkBoxes table, .checkBoxes td, .checkBoxes tr {
+	border-style: none;
+	background-color: transparent;
+}
+/* �e�_�C�A���O���̃��j���[�\���ʒu�ݒ� */
+.checkBoxes td {
+	padding-right: 20px;
+}
+
+/*�e�I����ʂ̃��C�A�E�g�ݒ�*/
+.selectDialog {
+	margin: 10px;
+}
+
+/*RI�敪�A�����X�e�[�^�X�̕\���ʒu�ݒ�*/
+#riOrderBlock, #kensaStatusBlock {
+	margin-left: 10px;
+}
+
+/*�e�I����ʂ̑S�I��\���ʒu�ݒ�*/
+#selectAllKensaType, #selectAllKensaRoom, #selectAllRiOrder,
+	#selectKensaStatus, #selectAllSection, #selectAllByoutou,
+	#selectAllKanjaNyugai, #selectAllDenpyouNyugai {
+	margin-top: 10px;
+}
+
+/*�e�I����ʂ̕\���ʒu�ݒ�*/
+.openDialog {
+	margin-left: -10px;
+}
+
+/*�e�I����ʂ̃{�^�����ݒ�*/
+.ui-dialog button {
+	width: 5em;
+}
+/* ���t���̓_�C�A���O */
+.ui-datepicker {
+	z-index: 99999 !important;
+}
+
+/* �N�E���Z���N�g�{�b�N�X�̕� */
+.ui-datepicker select.ui-datepicker-year, .ui-datepicker select.ui-datepicker-month
+	{
+	width: auto;
+}
+
+/* �N�E���Z���N�g�{�b�N�X�Ԃ̕� */
+.ui-datepicker select.ui-datepicker-month {
+	margin-left: 0.5em;
+}
+
+#reloadBtn {
+	position: absolute;
+	right: 5px;
+	top: 0.6px; /*2011.Dec �J�����_�[�ǉ�*/
+}
+
+#SearchBlockCenter div {
+	display: inline;
+}
+
+#SearchBlockCenter {
+	position: absolute;
+	top: 33px;
+	left: 5px;
+	right: 250px;
+	height: 26px;
+	background-color: #787EC1;
+	color: #FFF;
+	font-weight: bold;
+}
+
+/* �\���ؑւ̕� */
+#displayType {
+	width: 6.5em;
+}
+
+#SearchBlock_Bottom div {
+	display: inline;
+}
+
+#SearchBlock_Bottom {
+	position: absolute;
+	top: 63px;
+	left: 5px;
+	right: 250px;
+	/*height: 26px;*/
+	height: 10px;
+	background-color: #787EC1;
+}
+
+/* ���t�w�i�F
+2011.Dec �J�����_�[�ǉ�
+ */
+.DateDisplay {
+	background-color: #FFFFFF;
+	font-size: 16px;
+	padding: 3px;
+	position: relative;
+	top: -3px;
+
+	/*margin-bottom: 2px;*/
+	/* height: 26px; */
+	/*vertical-align: 4px;*/
+}
+
+/* ----------------------------------- �J�����_�[ ----------------------------------- */
+
+/* �\��J�����_�[�̃��C���ݒ� */
+table, th, td {
+	border-collapse: collapse;
+}
+
+/*�J�����_�[�����̃��C���ݒ� �ꗗ�����̃��C���ݒ�*/
+#CalendarBlock table, #CalendarBlock th, #CalendarBlock td, #OrderBlock table,
+	#OrderBlock th, #OrderBlock td {
+	border-style: solid;
+	border-color: #444;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+
+/* �w�i�F�A�c�X�N���[���o�[�ݒ� */
+#calendarArea {
+	border-style: none;
+	border-color: #FFF;
+	border-top-style: solid;
+	border-width: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 250px;
+	bottom: 0;
+	overflow: hidden;
+	background-color: #787EC1;
+	height: 100%;
+}
+
+#main {
+	position: absolute;
+	top: 92px;
+	left: 0;
+	right: 0;
+	bottom: 236px;
+}
+
+/* ----------------------------------- �˗��ڍ� ----------------------------------- */
+
+/*�˗��ڍ׃^�C�g���̐ݒ� padding : �\���ʒu�̐ݒ� */
+#IraiSyosaiTitle {
+	position: absolute;
+	top: 62px;
+	right: 0;
+	bottom: 0;
+	height: 26px;
+	background-color: #787EC1;
+	font-weight: bold;
+	overflow-y: hidden;
+	color: #FFF;
+	white-space: nowrap;
+}
+
+#IraiSyosai {
+	position: absolute;
+	bottom: 0px;
+}
+
+#IraiSyosaiArea {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#IraiSyosaiBlock {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+}
+
+#IraiFrame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.shosai {
+	width: 250px;
+}
+
+/* ----------------------------------- �I�[�_�[�u���b�N ----------------------------------- */
+#OrderBlock {
+	over-flow: scroll;
+}
+
+#OrderArea {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 236px;
+	background-color: #787EC1;
+	margin-top: 1px;
+}
+
+/* 2016.12.20 Add T.onoda@Cosmo Start KUMA205-3-CAL005 �\�񎞍��A�\�茟�����̕ύX */
+/* ----------------------------------- select2 ----------------------------------- */
+.select2-container {
+	z-index: 1010;
+}
+/* 2016.12.20 Add T.onoda@Cosmo End KUMA205-3-CAL005 �\�񎞍��A�\�茟�����̕ύX */

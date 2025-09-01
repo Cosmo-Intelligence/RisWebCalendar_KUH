@@ -1,0 +1,240 @@
+/******************************
+ * カレンダーエリア設定
+ * (設定の順番を変更しないこと)
+ */
+
+/* カレンダーエリア */
+div#CalendarBlock {
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	height: 100%;
+}
+
+/* カレンダーの全セル共通設定 */
+#CalendarBlock td {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* 枠リスト表示時のカラム幅 */
+#CalendarBlock td.showDetail {
+	width: 25%;
+}
+
+/****************************************************************
+ * 休診日を含まないようにする。
+ * (settings.xmlで設定可能なので、ここでは変更しないように！！)
+ ****************************************************************/
+#CalendarBlock.nonconsultationDayHidden td.nonconsultationDay {
+	display: none;
+}
+
+/******************************
+ * 日付エリア設定
+ */
+#dateblock {
+	overflow: hidden;
+	border-bottom-style: none;
+}
+
+/* 2013.11.19 Add Start NCC_C-2-TKC-R005 */
+/* 日付エリアテーブル設定 */
+#dateblock table {
+	/* カラム幅を均等設定 */
+	table-layout: fixed;
+}
+/* 2013.11.19 Add End   NCC_C-2-TKC-R005 */
+
+/* 日付エリア全セル */
+#dateblock td {
+	background-color: #CCFFCC; /* 日付部分の色を設定する */
+	font-size: 110%;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 日付エリア選択時 */
+#dateblock td.selected {
+	background-color: #9999FF;
+}
+
+/* 左側時刻エリア余白セル */
+#dateblock td.dateOffset {
+	border-bottom-style: none;
+	width: 60px;
+	background-color: #CCFFCC;
+}
+
+/*  時刻エリアのセルの幅設定*/
+#dateblock td.dateOffset div {
+	width: 60px;
+}
+
+/******************************/
+
+/******************************
+ * 時刻エリア・枠エリアスタイル設定
+ */
+
+#timeblock {
+	/* 2015.02.27 Add S.Matsumoto@CST Start KANA-C1-001 オーダ表示方法の変更 */
+	overflow-x: auto;
+	/* 2015.02.27 Add S.Matsumoto@CST End KANA-C1-001 オーダ表示方法の変更 */
+	overflow-y: scroll;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	background-color: #FFFFFF;
+	border-bottom-width: 1px;
+	height: 100%;
+}
+
+/* 時刻エリア・枠エリアの全テーブル共通設定 */
+#timeblock table {
+	width: 100px;
+	table-layout: fixed;
+}
+
+/* 時刻エリア・枠エリアの全セル共通設定 */
+#timeblock td {
+	font-size: 70%;
+	color: #000000;
+	background-color: #FFFFFF;
+	vertical-align: top;
+}
+
+/*******************************
+ * 時刻エリア
+ *
+ * td.timeクラスとその子要素のdivブロック両方にサイズをピクセル指定する事で
+ * ウィンドウのサイズにかかわらず常に60pxに固定する事が出来る。
+ * これは上のテーブル位置と下のテーブルを位置をずらさない為に必須。
+ * 変更可能なプロパティは横にコメントのあるもののみ
+ */
+#timeblock td.time {
+	background-color: #CCFFCC; /* 時間を表示するカラムの色を変更する。*/
+	width: 60px;
+}
+#timeblock td.time div {
+	width: 60px;
+	font-size: 12px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/*******************************
+ * 枠エリア
+ */
+#timeblock td div.data {
+	overflow: hidden;
+}
+
+#timeblock td div span.datetime {
+	display: none;
+}
+
+/* 時間枠検査表示項目共通設定 */
+#timeblock div.calendarItem {
+	display: inline;
+	position: absolute;
+	overflow: hidden;
+}
+
+/*
+ * 枠設定(下側優先)
+ */
+
+/* 土日の枠 */
+#timeblock td.saturday, #timeblock td.sunday {
+	background-color: #ffcccc;
+}
+
+/* 休診日の枠 */
+#timeblock td.nonconsultationDay {
+	background-color: #ff9999;
+}
+
+/* 当日の枠 */
+#timeblock td.today {
+	background-color: #99ccff;
+}
+
+/* データを持つ枠 */
+#timeblock td.hasdata {
+	background-color: #CCFFCC;
+}
+
+/* 選択された枠 */
+#timeblock td.selected {
+	border-color: #ffcc00;
+	border-width: 3px;
+	/* background-color: #FFFFFF; */
+}
+
+/*
+ * 枠リスト設定
+ */
+
+/* 枠リスト */
+#timeblock div.detailData {
+	display: none;
+	margin: 2px;
+	padding: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+	overflow: hidden;
+}
+
+/* 選択された枠リスト */
+#timeblock div.detailData.selectedDetailData {
+	/* border-color: #ffffcc; */
+	/* border-width: 2px; */
+	background-color: #ffffcc;
+}
+
+
+
+/* 2016.12.20 Add T.onoda@Cosmo Start KUMA205-3-CAL003 検査室毎画面　縦表示 */
+/*******************************
+ * 検査室毎縦表示エリア
+ *
+ */
+
+
+#dateblock td.dateOffset_h {
+	border-bottom-style: none;
+	width: 40px;
+	background-color: #CCFFCC;
+}
+
+#dateblock td.dateOffset_h div {
+	width: 40px;
+}
+
+#timeblock td.examroom_name {
+	background-color: #CCFFCC;
+	width: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#timeblock td.examroom_name div {
+	width: 40px;
+	height: 220px;
+	font-size: 20px;
+	font-weight: bold;
+	white-space: nowrap;
+	writing-mode: tb-rl;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#timeblock tr.examroom {
+	height: 220px;
+}
+
+.rcInfo {
+	font-size: 150%;
+}
+/* 2016.12.20 Add T.onoda@Cosmo End KUMA205-3-CAL003 検査室毎画面　縦表示 */

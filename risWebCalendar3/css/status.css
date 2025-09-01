@@ -1,0 +1,17 @@
+/*
+ * 検査ステータスによる文字色(DB設定より優先する)
+ * セレクタ
+ *   #timeblock div.statusXX
+ *   #OrderDetailList tr.statusXX
+ * の両方に指定する(XX:検査ステータス)。
+ */
+
+/* サンプル(検済の場合) */
+/*
+#timeblock div.status90, #OrderDetailList tr.status90 {
+	color: #0000ff;
+}
+*/
+#timeblock div.status10, #OrderDetailList tr.status10 {
+	color: #00ffff;
+}

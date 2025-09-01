@@ -1,0 +1,398 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#clear {
+	clear: both;
+}
+body {
+	background: #787EC1;
+}
+html,body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: #787EC1;
+}
+
+#header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 92px;
+	white-space: nowrap;
+}
+
+/* ----------------------------------- 検索ブロック ----------------------------------- */
+
+#SearchBlock {
+	background-color:#787EC1;
+	color:#FFF;
+	font-weight: bold;
+	margin: 5px;
+	height: 36px;
+}
+
+#SearchBlock div {
+	display: inline;
+}
+
+/*検査種別の選択ボタン文字サイズ設定*/
+#openKensaTypeDialog {
+	font-size: 16px;
+}
+
+/*検査室の選択ボタン文字サイズ設定*/
+#openKensaRoomDialog {
+	font-size: 16px;
+}
+
+/*RI区分の選択ボタン文字サイズ設定*/
+#openRiOrderDialog {
+	font-size: 16px;
+}
+
+/*検査ステータスの選択ボタン文字サイズ設定*/
+#openKensaStatusDialog {
+	font-size: 16px;
+}
+
+/*依頼科の選択ボタン文字サイズ設定*/
+#openSectionDialog {
+	font-size: 16px;
+}
+
+/*病棟の選択ボタン文字サイズ設定*/
+#openByoutouDialog {
+	font-size: 16px;
+}
+
+/*患者入外の選択ボタン文字サイズ設定*/
+#openKanjaNyugaiDialog {
+	font-size: 16px;
+}
+
+/*伝票入外の選択ボタン文字サイズ設定*/
+#openDenpyouNyugaiDialog {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Del S.Matsumoto@CST Start KANA-C1-002 日にち切替ボタン変更  */
+/*先月ボタン文字サイズ設定*/
+/*#prevMonth { */
+/*	font-size: 16px; */
+/*} */
+/* 2015.02.27 Del S.Matsumoto@CST End KANA-C1-002 日にち切替ボタン変更 */
+
+/*先週ボタン文字サイズ設定*/
+#prevWeek {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Add S.Matsumoto@CST Start KANA-C1-002 日にち切替ボタン変更 */
+/* 昨日ボタン文字サイズ設定*/
+#prevDay {
+	font-size: 16px;
+}
+/* 2015.02.27 Add S.Matsumoto@CST End KANA-C1-002 日にち切替ボタン変更 */
+
+/*本日ボタン文字サイズ設定*/
+#today {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Add S.Matsumoto@CST Start KANA-C1-002 日にち切替ボタン変更 */
+/* 明日ボタン文字サイズ設定*/
+#nextDay {
+	font-size: 16px;
+}
+/* 2015.02.27 Add S.Matsumoto@CST End KANA-C1-002 日にち切替ボタン変更 */
+
+/*来週ボタン文字サイズ設定*/
+#nextWeek {
+	font-size: 16px;
+}
+
+/* 2015.02.27 Del S.Matsumoto@CST Start KANA-C1-002 オーダ表示方法の変更 */
+/*来月ボタン文字サイズ設定*/
+/*#nextMonth { */
+/*	font-size: 16px; */
+/*} */
+/* 2015.02.27 Del S.Matsumoto@CST End KANA-C1-002 オーダ表示方法の変更 */
+
+/*更新ボタン文字サイズ設定*/
+#reloadBtn {
+	font-size: 16px;
+}
+
+/*検査種別のテキストフィールド幅設定*/
+#kensaTypeText {
+	width: 120px;
+	font-size: 16px;
+}
+
+/*検査室のテキストフィールド幅設定*/
+#kensaRoomText {
+	width: 83px;
+	font-size: 16px;
+}
+
+/*RI区分のテキストフィールド幅設定*/
+#riOrderText{
+	width: 70px;
+	font-size: 16px;
+}
+
+/*検査ステータスのテキストフィールド幅設定*/
+#kensaStatusText {
+	width: 60px;
+	font-size: 16px;
+}
+
+/*依頼科のテキストフィールド幅設定*/
+#sectionText {
+	width: 137px;
+	font-size: 16px;
+}
+
+/*病棟のテキストフィールド幅設定*/
+#byoutouText {
+	width: 100px;
+	font-size: 16px;
+}
+
+/*患者入外のテキストフィールド幅設定*/
+#kanjaNyugaiText {
+	width: 57px;
+	font-size: 16px;
+}
+
+/*伝票入外のテキストフィールド幅設定*/
+#denpyouNyugaiText {
+	width: 57px;
+	font-size: 16px;
+}
+
+/*検査ステータスのダイアログ設定*/
+#kensaStatusCheckBoxes td{
+	white-space: nowrap;
+}
+/* 時間枠の幅 */
+#timeFrame {
+	width: 47px;
+}
+
+/* 各ダイアログ内のチェックボックスのテーブル設定 */
+.checkBoxes table, .checkBoxes td, .checkBoxes tr {
+	border-style: none;
+	background-color: transparent;
+}
+/* 各ダイアログ内のメニュー表示位置設定 */
+.checkBoxes td {
+	padding-right: 20px;
+}
+
+/*各選択画面のレイアウト設定*/
+.selectDialog {
+	margin: 10px;
+}
+
+/*RI区分、検査ステータスの表示位置設定*/
+#riOrderBlock, #kensaStatusBlock{
+	margin-left: 10px;
+}
+
+
+/*各選択画面の全選択表示位置設定*/
+#selectAllKensaType, #selectAllKensaRoom, #selectAllRiOrder, #selectKensaStatus, #selectAllSection, #selectAllByoutou, #selectAllKanjaNyugai, #selectAllDenpyouNyugai {
+	margin-top: 10px;
+}
+
+/*各選択画面の表示位置設定*/
+.openDialog {
+	margin-left :-10px;
+}
+
+/*各選択画面のボタン幅設定*/
+.ui-dialog button {
+	width: 5em;
+}
+/* 日付入力ダイアログ */
+.ui-datepicker { z-index: 99999 !important; }
+
+/* 年・月セレクトボックスの幅 */
+.ui-datepicker select.ui-datepicker-year, .ui-datepicker select.ui-datepicker-month {
+	width: auto;
+}
+
+/* 年・月セレクトボックス間の幅 */
+.ui-datepicker select.ui-datepicker-month {
+    margin-left: 0.5em;
+}
+
+#reloadBtn {
+	position: absolute;
+	right: 5px;
+	top: 0.6px;	/*2011.Dec カレンダー追加*/
+}
+#SearchBlockCenter div {
+	display: inline;
+}
+
+#SearchBlockCenter {
+	position: absolute;
+	top: 33px;
+	left: 5px;
+	right: 250px;
+	height: 26px;
+	background-color:#787EC1;
+	color:#FFF;
+	font-weight: bold;
+}
+
+/* 表示切替の幅 */
+#displayType {
+	width: 6.5em;
+}
+
+#SearchBlock_Bottom div {
+	display: inline;
+}
+
+#SearchBlock_Bottom {
+	position: absolute;
+	top: 63px;
+	left: 5px;
+	right: 250px;
+	/*height: 26px;*/
+	height: 10px;
+	background-color: #787EC1;
+}
+
+/* 日付背景色
+2011.Dec カレンダー追加
+ */
+ .DateDisplay {
+  	background-color: #FFFFFF;
+  	font-size: 16px;
+	padding: 3px;
+	position: relative;
+	top: -3px;
+
+	/*margin-bottom: 2px;*/
+	/* height: 26px; */
+	/*vertical-align: 4px;*/	
+}
+
+/* ----------------------------------- カレンダー ----------------------------------- */
+
+/* 予約カレンダーのライン設定 */
+table, th, td {
+	border-collapse: collapse;
+}
+
+/*カレンダー部分のライン設定 一覧部分のライン設定*/
+#CalendarBlock table, #CalendarBlock th, #CalendarBlock td, #OrderBlock table, #OrderBlock th, #OrderBlock td{
+	border-style: solid;
+	border-color: #444;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+
+/* 背景色、縦スクロールバー設定 */
+
+#calendarArea {
+	border-style: none;
+	border-color: #FFF;
+	border-top-style: solid;
+	border-width: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 250px;
+	bottom: 0;
+	overflow: hidden;
+	background-color: #787EC1;
+	height: 100%;
+}
+
+#main {
+	position: absolute;
+	top: 92px;
+	left: 0;
+	right: 0;
+	bottom: 236px;
+}
+
+/* ----------------------------------- 依頼詳細 ----------------------------------- */
+
+/*依頼詳細タイトルの設定 padding : 表示位置の設定 */
+#IraiSyosaiTitle {
+	position: absolute;
+	top: 62px;
+	right: 0;
+	bottom: 0;
+	height: 26px;
+	background-color: #787EC1;
+	font-weight: bold;
+	overflow-y: hidden;
+	color: #FFF;
+	white-space: nowrap;
+}
+
+#IraiSyosai{
+	position: absolute;
+	bottom: 0px;
+}
+
+#IraiSyosaiArea {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#IraiSyosaiBlock {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+}
+
+#IraiFrame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.shosai {
+    width: 250px;
+}
+
+/* ----------------------------------- オーダーブロック ----------------------------------- */
+#OrderBlock {
+	over-flow:scroll;
+}
+
+
+#OrderArea {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 236px;
+    background-color: #787EC1;
+    margin-top: 1px;
+}
+
+/* 2016.12.20 Add T.onoda@Cosmo Start KUMA205-3-CAL005 予約時刻、予定検査室の変更 */
+/* ----------------------------------- select2 ----------------------------------- */
+.select2-container {
+	z-index: 1010;
+}
+/* 2016.12.20 Add T.onoda@Cosmo End KUMA205-3-CAL005 予約時刻、予定検査室の変更 */

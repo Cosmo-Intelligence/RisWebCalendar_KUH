@@ -1,0 +1,17 @@
+/*
+ * �����X�e�[�^�X�ɂ�镶���F(DB�ݒ���D�悷��)
+ * �Z���N�^
+ *   #timeblock div.statusXX
+ *   #OrderDetailList tr.statusXX
+ * �̗����Ɏw�肷��(XX:�����X�e�[�^�X)�B
+ */
+
+/* �T���v��(���ς̏ꍇ) */
+/*
+#timeblock div.status90, #OrderDetailList tr.status90 {
+	color: #0000ff;
+}
+*/
+#timeblock div.status10, #OrderDetailList tr.status10 {
+	color: #00ffff;
+}

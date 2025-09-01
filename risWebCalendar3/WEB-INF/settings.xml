@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="Windows-31J"?>
+<settings>
+	<!-- DB接続設定 -->
+	<DBAccess>
+		<!-- 接続先URL -->
+		<Connection>jdbc:oracle:thin:@10.1.31.31:1521:RRIS</Connection>
+		<!-- ユーザ名 -->
+		<User>rris</User>
+		<!-- パスワード -->
+		<Password>rris1</Password>
+
+		<!-- コネクションプーリング機能の設定 -->
+		<connectionPooling>
+			<!-- 最大コネクションプール数(プーリングしない場合は0) -->
+			<maxConnectionNumber>16</maxConnectionNumber>
+		</connectionPooling>
+	</DBAccess>
+
+	<!--熊大病院向けHTMLのパス-->
+	<htmlPath>http://10.1.31.31:8888/risWebHome/OrderSearchServlet?RequestType=request</htmlPath>
+
+	<!-- 休診日を含める・含めないの設定 -->
+	<!-- true  : 含める -->
+	<!-- false : 含めない -->
+	<displayNonconsultationDay>true</displayNonconsultationDay>
+
+	<!-- オーダ一覧検査ステータス文字色 -->
+	<!-- true  : 検査ステータスにより文字色を変更する -->
+	<!-- false : 検査ステータスにより文字色を変更しない -->
+	<orderDetailStatusColor>true</orderDetailStatusColor>
+
+	<!-- カレンダー枠の表示切替ON/OFF -->
+	<!-- true  : ON -->
+	<!-- false : OFF -->
+	<calendarDisplayChange>true</calendarDisplayChange>
+
+	<!-- オーダ詳細情報表示の表示項目設定 -->
+	<!--
+	  <item>タグ属性
+	    no        : 表示項目番号
+	    showOrder : 表示順序
+	    width     : 表示幅(0以下なら表示しない)
+	-->
+	<orderDetailItems>
+		<!-- 1 : 検査日 -->
+		<item no="1" showOrder="39" width="130"/>
+		<!-- 2 : 検査進捗 -->
+		<item no="2" showOrder="1" width="80"/>
+		<!-- 3 : 受付番号 -->
+		<item no="3" showOrder="40" width="50"/>
+		<!-- 4 : 予約時刻-->
+		<item no="4" showOrder="24" width="100"/>
+		<!-- 5 : 受付時刻 -->
+		<item no="5" showOrder="26" width="100"/>
+		<!-- 6 : 年齢 -->
+		<item no="6" showOrder="32" width="50"/>
+		<!-- 7 : 性別 -->
+		<item no="7" showOrder="20" width="50"/>
+		<!-- 8 : 状態 -->
+		<item no="8" showOrder="16" width="200"/>
+		<!-- 9 : 患者ID -->
+		<item no="9" showOrder="12" width="100"/>
+		<!-- 10 : カナ氏名 -->
+		<item no="10" showOrder="13" width="100"/>
+		<!-- 11 : 患者氏名(漢字)-->
+		<item no="11" showOrder="14" width="150"/>
+		<!-- 12 : 患者氏名(ローマ字) -->
+		<item no="12" showOrder="16" width="150"/>
+		<!-- 13 : 患者入外 -->
+		<item no="13" showOrder="9" width="80"/>
+		<!-- 14 : 依頼科 -->
+		<item no="14" showOrder="22" width="120"/>
+		<!-- 15 : 依頼科 -->
+		<item no="15" showOrder="30" width="0"/>
+		<!-- 16 : 病棟 -->
+		<item no="16" showOrder="15" width="100"/>
+		<!-- 17 : 病棟 -->
+		<item no="17" showOrder="11" width="0"/>
+		<!-- 18 : 伝票病棟 -->
+		<item no="18" showOrder="17" width="100"/>
+		<!-- 19 : 依頼医 -->
+		<item no="19" showOrder="18" width="100"/>
+		<!-- 20 : 検査種別 -->
+		<item no="20" showOrder="19" width="100"/>
+		<!-- 21 : 部位名称 -->
+		<item no="21" showOrder="4" width="180"/>
+		<!-- 22 : 部位名称 -->
+		<item no="22" showOrder="21" width="0"/>
+		<!-- 23 : 方法 -->
+		<item no="23" showOrder="5" width="200"/>
+		<!-- 24 : 方法 -->
+		<item no="24" showOrder="23" width="0"/>
+		<!-- 25 : 左右 -->
+		<item no="25" showOrder="6" width="0"/>
+		<!-- 26 : 左右 -->
+		<item no="26" showOrder="25" width="0"/>
+		<!-- 27 : 方向 -->
+		<item no="27" showOrder="7" width="0"/>
+		<!-- 28 : 方向 -->
+		<item no="28" showOrder="27" width="0"/>
+		<!-- 29 : 検査進捗 -->
+		<item no="29" showOrder="28" width="0"/>
+		<!-- 30 : 伝票入外 -->
+		<item no="30" showOrder="29" width="100"/>
+		<!-- 31 : 所属科 -->
+		<item no="31" showOrder="10" width="100"/>
+		<!-- 32 : 予定検査機器 -->
+		<item no="32" showOrder="31" width="100"/>
+		<!-- 33 : 実施検査機器 -->
+		<item no="33" showOrder="8" width="100"/>
+		<!-- 34 : 入力日 -->
+		<item no="34" showOrder="33" width="100"/>
+		<!-- 35 : 入力時間 -->
+		<item no="35" showOrder="34" width="100"/>
+		<!-- 36 : 実施者 -->
+		<item no="36" showOrder="35" width="100"/>
+		<!-- 37 : 受付者 -->
+		<item no="37" showOrder="36" width="100"/>
+		<!-- 38 : RI区分 -->
+		<item no="38" showOrder="37" width="100"/>
+		<!-- 39 : 病室名 -->
+		<item no="39" showOrder="38" width="100"/>
+		<!-- 40 : 検査開始時刻 -->
+		<item no="40" showOrder="2" width="100"/>
+		<!-- 41 : 検査終了時刻 -->
+		<item no="41" showOrder="3" width="100"/>
+		<!-- 42 : 予定検査室 -->
+		<item no="42" showOrder="41" width="100"/>
+		<!-- 43 : 実施検査室 -->
+		<item no="43" showOrder="42" width="100"/>
+		<!-- 44 : オーダ日時 -->
+		<item no="44" showOrder="43" width="100"/>
+		<!-- 45 : 呼出時刻 -->
+		<item no="45" showOrder="44" width="100"/>
+	</orderDetailItems>
+
+	<!-- カレンダー表示時刻(0000～2400の間で設定すること) -->
+	<CalendarTime>
+		<!-- 開始時刻(HHMM) -->
+		<start>0000</start>
+		<!-- 終了時刻(HHMM) -->
+		<end>2400</end>
+	</CalendarTime>
+
+	<!-- ログ設定 -->
+	<log>log4j.xml</log>
+	
+	<!-- カレンダー区切り文字 -->
+	<calseparator>/</calseparator>
+
+	<!-- 2011.11.19 Add NCC_C-2-TKC-R005 Start -->
+	<!-- オーダ件数 単位文字 -->
+	<orderCountUnit>件</orderCountUnit>
+	<!-- 2011.11.19 Add NCC_C-2-TKC-R005 End -->
+
+</settings>
