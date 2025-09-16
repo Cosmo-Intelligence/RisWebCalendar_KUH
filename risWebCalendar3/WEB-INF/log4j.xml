@@ -2,7 +2,7 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" >
 	<appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="C:/Program Files/Apache Software Foundation/Tomcat 8.0/logs/risWebCalendar3.log" />
+		<param name="File" value="C:/pleiades-2024-12-java-win-64bit-jre_20250120/tomcat/8/logs/risWebCalendar3.log" />
 		<param name="datePattern" value="'.'yyyy-MM-dd" />
 		<param name="Append" value="true" />
 		<layout class="org.apache.log4j.PatternLayout">

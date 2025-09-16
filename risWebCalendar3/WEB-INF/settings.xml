@@ -3,7 +3,7 @@
 	<!-- DB接続設定 -->
 	<DBAccess>
 		<!-- 接続先URL -->
-		<Connection>jdbc:oracle:thin:@10.1.31.31:1521:RRIS</Connection>
+		<Connection>jdbc:oracle:thin:@192.168.19.131:1521:RRIS</Connection>
 		<!-- ユーザ名 -->
 		<User>rris</User>
 		<!-- パスワード -->
@@ -17,7 +17,7 @@
 	</DBAccess>
 
 	<!--熊大病院向けHTMLのパス-->
-	<htmlPath>http://10.1.31.31:8888/risWebHome/OrderSearchServlet?RequestType=request</htmlPath>
+	<htmlPath>http://192.168.19.131:8888/risWebHome/OrderSearchServlet?RequestType=request</htmlPath>
 
 	<!-- 休診日を含める・含めないの設定 -->
 	<!-- true  : 含める -->

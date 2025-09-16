@@ -5,13 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
 import java.util.List;
+
 import com.yokogawa.radiquest.ris.action.DateAction;
 import com.yokogawa.radiquest.ris.bean.OrderCalendarItem;
-import com.yokogawa.radiquest.ris.core.Configuration;
 import com.yokogawa.radiquest.ris.core.DBAccessException;
 import com.yokogawa.radiquest.ris.core.DBSessionManager;
 import com.yokogawa.radiquest.ris.servlet.Parameters;
@@ -226,7 +224,10 @@ public class OrderCalenderHome extends AbstractDataHome {
 			} else {
 				sql.append("OR ");
 			}
+			// 2025.09.12 Add Y.Matsumoto@Cosmo Start 患者病棟_対象修正対応
+			//sql.append("PI.BYOUTOU_ID = ? ");
 			sql.append("RS.DENPYO_BYOUTOU_ID = ? ");
+			// 2025.09.12 Add Y.Matsumoto@Cosmo End 患者病棟_対象修正対応
 			if (i == byoutou.length - 1) {
 				sql.append(") ");
 			}
@@ -240,7 +241,11 @@ public class OrderCalenderHome extends AbstractDataHome {
 			} else {
 				sql.append("OR ");
 			}
+			// 2025.09.12 Add Y.Matsumoto@Cosmo Start 患者病棟_対象修正対応
+			//sql.append("RS.DENPYO_BYOUTOU_ID = ? ");
 			sql.append("PI.BYOUTOU_ID = ? ");
+			// 2025.09.12 Add Y.Matsumoto@Cosmo End 患者病棟_対象修正対応
+
 			if (i == patientByoutou.length - 1) {
 				sql.append(") ");
 			}
@@ -922,7 +927,10 @@ public class OrderCalenderHome extends AbstractDataHome {
 			} else {
 				sql.append("OR ");
 			}
+			// 2025.09.12 Add Y.Matsumoto@Cosmo Start 患者病棟_対象修正対応
+			//sql.append("PI.BYOUTOU_ID = ? ");
 			sql.append("RS.DENPYO_BYOUTOU_ID = ? ");
+			// 2025.09.12 Add Y.Matsumoto@Cosmo End 患者病棟_対象修正対応
 			if (i == byoutou.length - 1) {
 				sql.append(") ");
 			}
@@ -936,7 +944,10 @@ public class OrderCalenderHome extends AbstractDataHome {
 			} else {
 				sql.append("OR ");
 			}
-			sql.append("RS.DENPYO_BYOUTOU_ID = ? ");
+			// 2025.09.12 Add Y.Matsumoto@Cosmo Start 患者病棟_対象修正対応
+			//sql.append("RS.DENPYO_BYOUTOU_ID = ? ");
+			sql.append("PI.BYOUTOU_ID = ? ");
+			// 2025.09.12 Add Y.Matsumoto@Cosmo End 患者病棟_対象修正対応
 			if (i == patientByoutou.length - 1) {
 				sql.append(") ");
 			}
